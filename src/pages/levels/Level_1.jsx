@@ -40,7 +40,7 @@ const Level_1A = () => {
                 </div>
             </div>
             <img
-                src="src/assets/levels/Level_1.jpg"
+                src="../../assets/levels/Level_1.jpg"
                 alt="Background"
                 className="object-cover w-full h-full absolute z-0"
             />
