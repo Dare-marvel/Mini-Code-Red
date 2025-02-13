@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import background from "../../assets/levels/Level_1.jpg";
 
 const BackStory_prb1 = () => {
     const [text, setText] = useState("");
@@ -31,7 +32,7 @@ const BackStory_prb1 = () => {
         <div className="flex justify-center items-center flex-col h-screen relative">
             {/* Background Image */}
             <img
-                src="src/assets/levels/Level_1.jpg"
+                src={background}
                 alt="Background"
                 className="object-cover w-full h-full absolute z-0"
             />

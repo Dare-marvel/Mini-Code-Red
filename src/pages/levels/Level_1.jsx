@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import background from "../../assets/levels/Level_1.jpg";
 const Level_1A = () => {
     const [userInput, setUserInput] = useState("");
     const [resultMessage, setResultMessage] = useState("");
@@ -40,7 +40,7 @@ const Level_1A = () => {
                 </div>
             </div>
             <img
-                src="../../assets/levels/Level_1.jpg"
+                src={background}
                 alt="Background"
                 className="object-cover w-full h-full absolute z-0"
             />
