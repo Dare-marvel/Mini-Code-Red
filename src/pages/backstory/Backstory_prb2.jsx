@@ -31,7 +31,7 @@ const Backstory_prb2 = () => {
         <div className="flex justify-center items-center flex-col h-screen relative">
             {/* Background Image */}
             <img
-                src="src/assets/levels/Level_2.jpg"
+                src="../../assets/levels/Level_2.jpg"
                 alt="Background"
                 className="object-cover w-full h-full absolute z-0"
             />
