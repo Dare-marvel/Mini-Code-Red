@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './index.css'
 import Common from '../Common'
+import { Analytics } from "@vercel/analytics/react"
 
 const HomePage = lazy(() => import('./pages/interfaces/HomePage'))
 
@@ -33,6 +34,7 @@ const App = () => {
 
         </Route>
       </Routes>
+      <Analytics />
     </Router>
   )
 }
