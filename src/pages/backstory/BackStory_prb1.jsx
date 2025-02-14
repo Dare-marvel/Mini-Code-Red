@@ -37,15 +37,15 @@ const BackStory_prb1 = () => {
                 className="object-cover w-full h-full absolute z-0"
             />
             {/* Text Container */}
-            <div className="relative bg-black bg-opacity-70 p-6 rounded-lg w-[48%] z-10 h-[50%] text-white border-2 border-white">
-                <h1 className="text-2xl tracking-wide">
+            <div className="relative bg-black bg-opacity-70 p-6 rounded-lg w-11/12 sm:w-2/3 lg:w-1/2 z-10 h-auto sm:h-[50%] text-white border-2 border-white">
+                <h1 className="text-lg sm:text-2xl tracking-wide">
                     {text}
                     {!isTypingComplete && <span className="animate-pulse">|</span>}
                 </h1>
                 {isTypingComplete && (
                     <button
                         onClick={() => navigate("/level_1")}
-                        className="absolute bottom-[-4rem] right-0 px-6 py-3 bg-black bg-opacity-70 text-2xl tracking-wide rounded-lg hover:bg-opacity-90 transition-transform transform hover:scale-105 border-2 border-white"
+                        className="mt-4 sm:mt-0 sm:absolute sm:bottom-[-4rem] sm:right-0 px-4 py-2 sm:px-6 sm:py-3 bg-black bg-opacity-70 text-lg sm:text-2xl tracking-wide rounded-lg hover:bg-opacity-90 transition-transform transform hover:scale-105 border-2 border-white"
                     >
                         Next
                     </button>

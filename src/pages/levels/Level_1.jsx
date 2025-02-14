@@ -54,16 +54,16 @@ const Level_1A = () => {
                     value={userInput}
                     onChange={(e) => setUserInput(e.target.value)}
                     onKeyDown={handleKeyPress}
-                    className="w-full px-4 py-2 text-black rounded-md border-2 border-gray-300 focus:outline-none focus:border-white focus:ring focus:ring-white"
+                    className="w-full px-4 py-2 text-black rounded-md border-2 border-gray-300 focus:outline-none focus:border-white focus:ring focus:ring-white sm:text-base text-sm"
                 />
                 <button
                     id="verifyButton"
                     onClick={handleVerify}
-                    className="mt-4 px-6 py-2 bg-blue-900 hover:bg-blue-700 text-white font-semibold rounded-md"
+                    className="mt-4 px-6 py-2 bg-blue-900 hover:bg-blue-700 text-white font-semibold rounded-md sm:text-base text-sm"
                 >
                     Verify
                 </button>
-                <p id="resultMessage" className="mt-4 text-lg font-medium">
+                <p id="resultMessage" className="mt-4 text-lg font-medium sm:text-base text-sm">
                     {resultMessage}
                 </p>
             </div>
