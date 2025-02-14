@@ -37,7 +37,7 @@ const Backstory_Level_1 = () => {
                 className="object-cover w-full h-full absolute z-0"
             />
             {/* Text Container */}
-            <div className="relative bg-black bg-opacity-70 p-6 rounded-lg w-[80%]  z-10 h-[80%]  text-white border-2 border-white md:h-[65%] md:w-[48%]">
+            <div className="relative bg-black bg-opacity-70 p-6 rounded-lg w-[80%]  z-10 h-[75%]  text-white border-2 border-white md:h-[65%] md:w-[48%]">
                 <h1 className="text-base md:text-2xl tracking-wide">
                     {text}
                     {!isTypingComplete && <span className="animate-pulse">|</span>}
