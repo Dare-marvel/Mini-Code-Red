@@ -16,20 +16,18 @@ const HomePage = () => {
     window.addEventListener('resize', handleResize);
 
     const handleSkip = (e) => {
-      if (e.code === 'Enter' || e.type === 'touchstart') {
+      if (!isMobile && (e.code === 'Enter' || e.type === 'touchstart')) {
         navigate('/backstory_1');
       }
     };
 
     window.addEventListener('keydown', handleSkip);
-    window.addEventListener('touchstart', handleSkip);
 
     return () => {
       window.removeEventListener('resize', handleResize);
       window.removeEventListener('keydown', handleSkip);
-      window.removeEventListener('touchstart', handleSkip);
     };
-  }, [navigate]);
+  }, [navigate, isMobile]);
 
   return (
     <div
